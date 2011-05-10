@@ -1,0 +1,15 @@
+Mixio Keychain Framework
+Keychain Framework for "Mixio" that is a mixi client for iPhone.
+
+(C)2011 Takayoshi Sato.
+Licensed under Apache License 2.0.
+
+-----
+
+This library inludes these libraries.
+
+継承して使えるSingletonクラス by ゆどうふろぐ
+http://d.hatena.ne.jp/Yudoufu/20090318/1237385821
+
+XcodeColors by Deep Informational Technologies.
+http://deepit.ru/products/XcodeColors/info/

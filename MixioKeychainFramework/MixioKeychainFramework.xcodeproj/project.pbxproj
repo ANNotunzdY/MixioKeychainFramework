@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002B35311378E3D300FF7ACA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002B35301378E3D300FF7ACA /* Security.framework */; };
+		002B35331378E7ED00FF7ACA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002B35301378E3D300FF7ACA /* Security.framework */; };
+		002B353E1378F10B00FF7ACA /* ColorLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B353D1378F10B00FF7ACA /* ColorLog.m */; };
+		00D8D4FF1377ADF90037D1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D8D4FE1377ADF90037D1F2 /* Foundation.framework */; };
+		00D8D50A1377ADF90037D1F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D8D5091377ADF90037D1F2 /* UIKit.framework */; };
+		00D8D50B1377ADF90037D1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D8D4FE1377ADF90037D1F2 /* Foundation.framework */; };
+		00D8D50D1377ADF90037D1F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D8D50C1377ADF90037D1F2 /* CoreGraphics.framework */; };
+		00D8D5101377ADF90037D1F2 /* libMixioKeychainFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D8D4FB1377ADF90037D1F2 /* libMixioKeychainFramework.a */; };
+		00D8D5161377ADF90037D1F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00D8D5141377ADF90037D1F2 /* InfoPlist.strings */; };
+		00D8D5191377ADF90037D1F2 /* MixioKeychainFrameworkTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 00D8D5181377ADF90037D1F2 /* MixioKeychainFrameworkTests.h */; };
+		00D8D51B1377ADF90037D1F2 /* MixioKeychainFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8D51A1377ADF90037D1F2 /* MixioKeychainFrameworkTests.m */; };
+		00D8D5261377AE6A0037D1F2 /* MixioKeychainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D8D5241377AE690037D1F2 /* MixioKeychainManager.h */; };
+		00D8D5271377AE6A0037D1F2 /* MixioKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8D5251377AE690037D1F2 /* MixioKeychainManager.m */; };
+		00D8D5281377AE6A0037D1F2 /* MixioKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8D5251377AE690037D1F2 /* MixioKeychainManager.m */; };
+		00D8D52B1377AF6B0037D1F2 /* YFSingletonObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D8D5291377AF6B0037D1F2 /* YFSingletonObject.h */; };
+		00D8D52C1377AF6B0037D1F2 /* YFSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8D52A1377AF6B0037D1F2 /* YFSingletonObject.m */; };
+		00D8D52D1377AF6B0037D1F2 /* YFSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8D52A1377AF6B0037D1F2 /* YFSingletonObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00D8D50E1377ADF90037D1F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D8D4F21377ADF90037D1F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D8D4FA1377ADF90037D1F2;
+			remoteInfo = MixioKeychainFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002B35301378E3D300FF7ACA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		002B353C1378F10B00FF7ACA /* ColorLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLog.h; sourceTree = "<group>"; };
+		002B353D1378F10B00FF7ACA /* ColorLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorLog.m; sourceTree = "<group>"; };
+		00D8D4FB1377ADF90037D1F2 /* libMixioKeychainFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMixioKeychainFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D8D4FE1377ADF90037D1F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00D8D5021377ADF90037D1F2 /* MixioKeychainFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixioKeychainFramework-Prefix.pch"; sourceTree = "<group>"; };
+		00D8D5081377ADF90037D1F2 /* MixioKeychainFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixioKeychainFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D8D5091377ADF90037D1F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00D8D50C1377ADF90037D1F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00D8D5131377ADF90037D1F2 /* MixioKeychainFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MixioKeychainFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		00D8D5151377ADF90037D1F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00D8D5171377ADF90037D1F2 /* MixioKeychainFrameworkTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixioKeychainFrameworkTests-Prefix.pch"; sourceTree = "<group>"; };
+		00D8D5181377ADF90037D1F2 /* MixioKeychainFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixioKeychainFrameworkTests.h; sourceTree = "<group>"; };
+		00D8D51A1377ADF90037D1F2 /* MixioKeychainFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixioKeychainFrameworkTests.m; sourceTree = "<group>"; };
+		00D8D5241377AE690037D1F2 /* MixioKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixioKeychainManager.h; sourceTree = "<group>"; };
+		00D8D5251377AE690037D1F2 /* MixioKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixioKeychainManager.m; sourceTree = "<group>"; };
+		00D8D5291377AF6B0037D1F2 /* YFSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSingletonObject.h; sourceTree = "<group>"; };
+		00D8D52A1377AF6B0037D1F2 /* YFSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSingletonObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00D8D4F81377ADF90037D1F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002B35311378E3D300FF7ACA /* Security.framework in Frameworks */,
+				00D8D4FF1377ADF90037D1F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D8D5041377ADF90037D1F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D8D50A1377ADF90037D1F2 /* UIKit.framework in Frameworks */,
+				00D8D50B1377ADF90037D1F2 /* Foundation.framework in Frameworks */,
+				00D8D50D1377ADF90037D1F2 /* CoreGraphics.framework in Frameworks */,
+				00D8D5101377ADF90037D1F2 /* libMixioKeychainFramework.a in Frameworks */,
+				002B35331378E7ED00FF7ACA /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D8D4F01377ADF90037D1F2 = {
+			isa = PBXGroup;
+			children = (
+				00D8D5001377ADF90037D1F2 /* MixioKeychainFramework */,
+				00D8D5111377ADF90037D1F2 /* MixioKeychainFrameworkTests */,
+				00D8D4FD1377ADF90037D1F2 /* Frameworks */,
+				00D8D4FC1377ADF90037D1F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00D8D4FC1377ADF90037D1F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00D8D4FB1377ADF90037D1F2 /* libMixioKeychainFramework.a */,
+				00D8D5081377ADF90037D1F2 /* MixioKeychainFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00D8D4FD1377ADF90037D1F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002B35301378E3D300FF7ACA /* Security.framework */,
+				00D8D4FE1377ADF90037D1F2 /* Foundation.framework */,
+				00D8D5091377ADF90037D1F2 /* UIKit.framework */,
+				00D8D50C1377ADF90037D1F2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00D8D5001377ADF90037D1F2 /* MixioKeychainFramework */ = {
+			isa = PBXGroup;
+			children = (
+				00D8D5011377ADF90037D1F2 /* Supporting Files */,
+				00D8D5241377AE690037D1F2 /* MixioKeychainManager.h */,
+				00D8D5251377AE690037D1F2 /* MixioKeychainManager.m */,
+				00D8D5291377AF6B0037D1F2 /* YFSingletonObject.h */,
+				00D8D52A1377AF6B0037D1F2 /* YFSingletonObject.m */,
+			);
+			path = MixioKeychainFramework;
+			sourceTree = "<group>";
+		};
+		00D8D5011377ADF90037D1F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00D8D5021377ADF90037D1F2 /* MixioKeychainFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00D8D5111377ADF90037D1F2 /* MixioKeychainFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				002B353C1378F10B00FF7ACA /* ColorLog.h */,
+				002B353D1378F10B00FF7ACA /* ColorLog.m */,
+				00D8D5181377ADF90037D1F2 /* MixioKeychainFrameworkTests.h */,
+				00D8D51A1377ADF90037D1F2 /* MixioKeychainFrameworkTests.m */,
+				00D8D5121377ADF90037D1F2 /* Supporting Files */,
+			);
+			path = MixioKeychainFrameworkTests;
+			sourceTree = "<group>";
+		};
+		00D8D5121377ADF90037D1F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00D8D5131377ADF90037D1F2 /* MixioKeychainFrameworkTests-Info.plist */,
+				00D8D5141377ADF90037D1F2 /* InfoPlist.strings */,
+				00D8D5171377ADF90037D1F2 /* MixioKeychainFrameworkTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00D8D4F91377ADF90037D1F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D8D5261377AE6A0037D1F2 /* MixioKeychainManager.h in Headers */,
+				00D8D52B1377AF6B0037D1F2 /* YFSingletonObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00D8D4FA1377ADF90037D1F2 /* MixioKeychainFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D8D51E1377ADF90037D1F2 /* Build configuration list for PBXNativeTarget "MixioKeychainFramework" */;
+			buildPhases = (
+				00D8D4F71377ADF90037D1F2 /* Sources */,
+				00D8D4F81377ADF90037D1F2 /* Frameworks */,
+				00D8D4F91377ADF90037D1F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixioKeychainFramework;
+			productName = MixioKeychainFramework;
+			productReference = 00D8D4FB1377ADF90037D1F2 /* libMixioKeychainFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		00D8D5071377ADF90037D1F2 /* MixioKeychainFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D8D5211377ADF90037D1F2 /* Build configuration list for PBXNativeTarget "MixioKeychainFrameworkTests" */;
+			buildPhases = (
+				00D8D5031377ADF90037D1F2 /* Sources */,
+				00D8D5041377ADF90037D1F2 /* Frameworks */,
+				00D8D5051377ADF90037D1F2 /* Resources */,
+				00D8D5061377ADF90037D1F2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D8D50F1377ADF90037D1F2 /* PBXTargetDependency */,
+			);
+			name = MixioKeychainFrameworkTests;
+			productName = MixioKeychainFrameworkTests;
+			productReference = 00D8D5081377ADF90037D1F2 /* MixioKeychainFrameworkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00D8D4F21377ADF90037D1F2 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 00D8D4F51377ADF90037D1F2 /* Build configuration list for PBXProject "MixioKeychainFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00D8D4F01377ADF90037D1F2;
+			productRefGroup = 00D8D4FC1377ADF90037D1F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00D8D4FA1377ADF90037D1F2 /* MixioKeychainFramework */,
+				00D8D5071377ADF90037D1F2 /* MixioKeychainFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00D8D5051377ADF90037D1F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D8D5161377ADF90037D1F2 /* InfoPlist.strings in Resources */,
+				00D8D5191377ADF90037D1F2 /* MixioKeychainFrameworkTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00D8D5061377ADF90037D1F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00D8D4F71377ADF90037D1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D8D5271377AE6A0037D1F2 /* MixioKeychainManager.m in Sources */,
+				00D8D52C1377AF6B0037D1F2 /* YFSingletonObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D8D5031377ADF90037D1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D8D51B1377ADF90037D1F2 /* MixioKeychainFrameworkTests.m in Sources */,
+				00D8D5281377AE6A0037D1F2 /* MixioKeychainManager.m in Sources */,
+				00D8D52D1377AF6B0037D1F2 /* YFSingletonObject.m in Sources */,
+				002B353E1378F10B00FF7ACA /* ColorLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00D8D50F1377ADF90037D1F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D8D4FA1377ADF90037D1F2 /* MixioKeychainFramework */;
+			targetProxy = 00D8D50E1377ADF90037D1F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00D8D5141377ADF90037D1F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D8D5151377ADF90037D1F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00D8D51C1377ADF90037D1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00D8D51D1377ADF90037D1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		00D8D51F1377ADF90037D1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/MixioKeychainFramework.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixioKeychainFramework/MixioKeychainFramework-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00D8D5201377ADF90037D1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/MixioKeychainFramework.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixioKeychainFramework/MixioKeychainFramework-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00D8D5221377ADF90037D1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixioKeychainFrameworkTests/MixioKeychainFrameworkTests-Prefix.pch";
+				INFOPLIST_FILE = "MixioKeychainFrameworkTests/MixioKeychainFrameworkTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		00D8D5231377ADF90037D1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixioKeychainFrameworkTests/MixioKeychainFrameworkTests-Prefix.pch";
+				INFOPLIST_FILE = "MixioKeychainFrameworkTests/MixioKeychainFrameworkTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00D8D4F51377ADF90037D1F2 /* Build configuration list for PBXProject "MixioKeychainFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D8D51C1377ADF90037D1F2 /* Debug */,
+				00D8D51D1377ADF90037D1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D8D51E1377ADF90037D1F2 /* Build configuration list for PBXNativeTarget "MixioKeychainFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D8D51F1377ADF90037D1F2 /* Debug */,
+				00D8D5201377ADF90037D1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D8D5211377ADF90037D1F2 /* Build configuration list for PBXNativeTarget "MixioKeychainFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D8D5221377ADF90037D1F2 /* Debug */,
+				00D8D5231377ADF90037D1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00D8D4F21377ADF90037D1F2 /* Project object */;
+}
