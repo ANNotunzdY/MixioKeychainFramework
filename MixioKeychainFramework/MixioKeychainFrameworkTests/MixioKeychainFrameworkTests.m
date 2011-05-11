@@ -45,8 +45,8 @@ NSString* const kMixioKeychainFrameworkTestsItemKey = @"com.smilemac.MixioKeycha
 	[[MixioKeychainManager defaultManager] addItemWithAccountName:@"NULLPO" password:@"GA" forKey:kMixioKeychainFrameworkTestsItemKey options:nil];
 	NSDictionary* item = [[MixioKeychainManager defaultManager] itemForKey:kMixioKeychainFrameworkTestsItemKey];
 	STAssertNotNil(item,  LCL_RED @"Failed to get keychain item." LCL_RESET);
-	STAssertEquals([item objectForKey:(id)kSecAttrAccount], @"NULLPO", LCL_RED @"Account name is not match." LCL_RESET);
-	STAssertEquals([[[NSString alloc] initWithData:[item objectForKey:(id)kSecValueData] encoding:NSUTF8StringEncoding] autorelease], @"GA", LCL_RED @"Password is not match." LCL_RESET);
+	STAssertEqualObjects([item objectForKey:(id)kSecAttrAccount], @"NULLPO", LCL_RED @"Account name is not match." LCL_RESET);
+	STAssertEqualObjects([[[NSString alloc] initWithData:[item objectForKey:(id)kSecValueData] encoding:NSUTF8StringEncoding] autorelease], @"GA", LCL_RED @"Password is not match." LCL_RESET);
 }
 
 - (void)testDeleteItem {

@@ -52,6 +52,8 @@
 	NSMutableDictionary* keychainItemDictionary = [NSMutableDictionary dictionary];
 	[keychainItemDictionary setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
 	[keychainItemDictionary setObject:key forKey:(id)kSecAttrGeneric];
+	[keychainItemDictionary setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
+	[keychainItemDictionary setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
 	NSDictionary *passwordData = NULL;
     OSStatus keychainError = noErr;
     keychainError = SecItemCopyMatching((CFDictionaryRef)keychainItemDictionary,
