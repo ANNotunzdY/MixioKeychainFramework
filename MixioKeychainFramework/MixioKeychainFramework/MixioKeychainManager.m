@@ -27,6 +27,8 @@
 	NSMutableDictionary* query = [NSMutableDictionary dictionaryWithDictionary:keychainItemDictionary];
 	
 	[query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
+	[query removeObjectForKey:(id)kSecReturnAttributes];
+	
 	[keychainItemDictionary setObject:accountName forKey:(id)kSecAttrAccount];
 	[keychainItemDictionary setObject:[password dataUsingEncoding:NSUTF8StringEncoding] forKey:(id)kSecValueData];
 	
@@ -35,7 +37,11 @@
     keychainError = SecItemCopyMatching((CFDictionaryRef)query, (CFTypeRef *)&passwordData);
 	
 	if (keychainError == noErr) {
-		keychainError = SecItemUpdate((CFDictionaryRef)query, (CFDictionaryRef)keychainItemDictionary);
+		NSMutableDictionary* updateDictionary = [NSMutableDictionary dictionary];
+		[updateDictionary setObject:accountName forKey:(id)kSecAttrAccount];
+		[updateDictionary setObject:[keychainItemDictionary objectForKey:(id)kSecValueData] forKey:(id)kSecValueData];
+		
+		keychainError = SecItemUpdate((CFDictionaryRef)query, (CFDictionaryRef)updateDictionary);
 		if (keychainError == noErr) {
 			return YES;
 		}

@@ -32,25 +32,25 @@ NSString* const kMixioKeychainFrameworkTestsItemKey = @"com.smilemac.MixioKeycha
 
 - (void)testAddItem
 {
-    STAssertTrue([[MixioKeychainManager defaultManager] addItemWithAccountName:@"NULLPO" password:@"GA" forKey:kMixioKeychainFrameworkTestsItemKey options:nil], LCL_RED @"Failed to add keychain item." LCL_RESET);
+    STAssertTrue([[MixioKeychainManager defaultManager] addItemWithAccountName:@"YOUR_ACCOUNT_NAME" password:@"YOUR_PASSWORD" forKey:kMixioKeychainFrameworkTestsItemKey options:nil], LCL_RED @"Failed to add keychain item." LCL_RESET);
 }
 
 - (void)testUpdateItem
 {
-	[[MixioKeychainManager defaultManager] addItemWithAccountName:@"NULLPO" password:@"GA" forKey:kMixioKeychainFrameworkTestsItemKey options:nil];
-	STAssertTrue([[MixioKeychainManager defaultManager] addItemWithAccountName:@"NULLPO" password:@"GA" forKey:kMixioKeychainFrameworkTestsItemKey options:nil], LCL_RED @"Failed to update keychain item." LCL_RESET);
+	[self testAddItem];
+	STAssertTrue([[MixioKeychainManager defaultManager] addItemWithAccountName:@"YOUR_ACCOUNT_NAME" password:@"YOUR_REPLACED_PASSWORD" forKey:kMixioKeychainFrameworkTestsItemKey options:nil], LCL_RED @"Failed to update keychain item." LCL_RESET);
 }
 
 - (void)testGetItem {
-	[[MixioKeychainManager defaultManager] addItemWithAccountName:@"NULLPO" password:@"GA" forKey:kMixioKeychainFrameworkTestsItemKey options:nil];
+	[self testAddItem];
 	NSDictionary* item = [[MixioKeychainManager defaultManager] itemForKey:kMixioKeychainFrameworkTestsItemKey];
 	STAssertNotNil(item,  LCL_RED @"Failed to get keychain item." LCL_RESET);
-	STAssertEqualObjects([item objectForKey:(id)kSecAttrAccount], @"NULLPO", LCL_RED @"Account name is not match." LCL_RESET);
-	STAssertEqualObjects([[[NSString alloc] initWithData:[item objectForKey:(id)kSecValueData] encoding:NSUTF8StringEncoding] autorelease], @"GA", LCL_RED @"Password is not match." LCL_RESET);
+	STAssertEqualObjects([item objectForKey:(id)kSecAttrAccount], @"YOUR_ACCOUNT_NAME", LCL_RED @"Account name is not match." LCL_RESET);
+	STAssertEqualObjects([[[NSString alloc] initWithData:[item objectForKey:(id)kSecValueData] encoding:NSUTF8StringEncoding] autorelease], @"YOUR_PASSWORD", LCL_RED @"Password is not match." LCL_RESET);
 }
 
 - (void)testDeleteItem {
-	[[MixioKeychainManager defaultManager] addItemWithAccountName:@"Hello" password:@"World" forKey:kMixioKeychainFrameworkTestsItemKey options:nil];
+	[self testAddItem];
 	STAssertTrue([[MixioKeychainManager defaultManager] removeItemForKey:kMixioKeychainFrameworkTestsItemKey], LCL_RED @"Failed to delete keychain item.\033[0m" LCL_RESET);
 }
 
