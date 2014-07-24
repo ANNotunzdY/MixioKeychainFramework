@@ -46,10 +46,7 @@ static MixioKeychainManager *sharedInstance = nil;
 	}
     
 	NSMutableDictionary* query = [NSMutableDictionary dictionaryWithDictionary:keychainItemDictionary];
-    
-	[query setObject:(id)kCFBooleanTrue forKey:(__bridge id)kSecReturnAttributes];
-	[query removeObjectForKey:(__bridge id)kSecReturnAttributes];
-    
+
 	[keychainItemDictionary setObject:accountName forKey:(__bridge id)kSecAttrAccount];
 	[keychainItemDictionary setObject:[password dataUsingEncoding:NSUTF8StringEncoding] forKey:(__bridge id)kSecValueData];
     
