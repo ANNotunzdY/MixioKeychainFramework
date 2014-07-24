@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YFSingletonObject.h"
 #import <Security/Security.h>
 
-@interface MixioKeychainManager : YFSingletonObject {
+@interface MixioKeychainManager : NSObject {
 }
 
 + (MixioKeychainManager *)defaultManager;
